@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background: #000000;
+    color: #f4f4f4;
+  }
+
+.hero-bg {
+    background-image: url('assets/landing.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+.navbar{
+    color: #f4f4f4;
+    font-family: Cinzel;
+    font-weight: 800;
+}
+
+.subheading{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    margin: 40px;
+}
+
+.sheading {
+    font-family: "Alex Brush", cursive;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.btext {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: bold;
+    font-variation-settings:
+    "wdth" 100;
+  }
+  
+
+.cards{
+    background: #1E1E1E;
+    border-radius: 30px;
+    width: 330px;
+    height: 350px;
+}
+
+.car-card {
+    background-color: #1E1E1E;
+    color: #ffffff;
+    width: 330px; 
+    height: 440px;
+    border-radius: 15px;
+    overflow: hidden; 
+    padding-bottom: 20px;
+}
+.car-image-container {
+    width: 100%; 
+    position: relative;
+}
+.car-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.car-details {
+    padding: 1px 20px 0;
+}
+.car-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #cccccc; 
+}
+.car-specs p {
+    font-size: 14px;
+    color: #a0a0a0;
+}
+.car-price {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 1px;
+    color: #ffffff; 
+}
+
