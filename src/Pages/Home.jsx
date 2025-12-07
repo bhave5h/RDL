@@ -11,7 +11,7 @@ const Home = () => {
       
       <div
         id="navbar"
-        className="navabr fixed top-10 left-0 w-full flex justify-center z-50"
+        className="navbar fixed top-10 left-0 w-full flex justify-center z-50"
       >
         <GlassSurface
           width={800}
@@ -25,13 +25,16 @@ const Home = () => {
           brightness={60}
           opacity={0}
         >
-          <div className="navbar flex items-center gap-10 text-lg font-medium">
-            <a href="/">Home</a>
-            <a href="/">Category</a>
-            <a href="/about">About Us</a>
-            <a href="/customers">Customers</a>
-            <a href="/contact">Contact</a>
-          </div>
+          
+      <div className="navbar flex items-center gap-10 text-lg font-medium">
+        <a href="#home">Home</a>
+        <a href="#category">Category</a>
+        <a href="#about">About Us</a>
+        <a href="#customers">Customers</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+
         </GlassSurface>
       </div>
     </div>

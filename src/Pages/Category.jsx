@@ -136,7 +136,7 @@ function Category() {
             <img src={AUDI} alt="Mercedes Benz E-Class" class="car-image"></img>
           </div>
           <div class="car-details">
-            <h2 class="car-title">Mercedes Benz</h2>
+            <h2 class="car-title">Audi Tt</h2>
             <div class="car-specs">
               <p>2.0 45 TFSI | 2017 | 37,000 Km</p>
               <p>Petrol | Automatic</p>
@@ -145,7 +145,7 @@ function Category() {
             <div class="car-price">₹370000</div>
           </div>
         </div>
-        
+
       </div>
     </div>
   );
