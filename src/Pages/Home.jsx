@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import GlassSurface from "../Componets/GlassSurface";
+import background from "/assets/bg.webm";
 
 const Home = () => {
   const videoRef = useRef(null);
@@ -27,9 +27,9 @@ const Home = () => {
         loop
         muted
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-80"
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-95"
       >
-        <source src="https://ik.imagekit.io/bhavesssh/Projects_video/bg.mp4" type="video/mp4" />
+        <source src={background} type="video/webm" />
         Your browser does not support the video tag.
       </video>
 
