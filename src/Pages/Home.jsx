@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import GlassSurface from "../Componets/GlassSurface";
 
 const Home = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.defaultMuted = true;
+      videoRef.current.muted = true;
+      videoRef.current.play().catch((error) => {
+        console.error("Video autoplay failed:", error);
+      });
+    }
+  }, []);
+
   return (
     <div
       id="home"
@@ -10,6 +22,7 @@ const Home = () => {
     >
       {/* BACKGROUND VIDEO */}
       <video
+        ref={videoRef}
         autoPlay
         loop
         muted
@@ -29,7 +42,7 @@ const Home = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           src="/assets/logo.svg"
           alt="Rich Drive Luxury Logo"
-          className="absolute top-6 left-6 md:top-8 md:left-10 w-28 md:w-60 z-50"
+          className="absolute bottom-32 md:bottom-auto md:top-1/2 md:-translate-y-1/2 lg:top-8 lg:-translate-y-0 left-6 md:left-10 w-70 mb-9 md:w-52 lg:w-60 z-50"
         />
 
         {/* HERO SIDE IMAGE */}
@@ -39,7 +52,7 @@ const Home = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
           src="/assets/hero.svg"
           alt="Rich Drive Luxury Hero"
-          className="absolute bottom-10 left-6 md:left-10 w-40 md:w-80 z-50"
+          className="absolute bottom-10 left-6 md:left-10 w-70 md:w-80 z-50"
         />
 
 
