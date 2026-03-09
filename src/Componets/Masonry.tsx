@@ -85,7 +85,7 @@ const Masonry: React.FC<MasonryProps> = ({
   const columns = useMedia(
     ['(min-width:1500px)', '(min-width:1000px)', '(min-width:600px)', '(min-width:400px)'],
     [5, 4, 3, 2],
-    1
+    1 // 1 column for anything smaller than 400px
   );
 
   const [containerRef, { width }] = useMeasure<HTMLDivElement>();
@@ -134,7 +134,7 @@ const Masonry: React.FC<MasonryProps> = ({
     return items.map(child => {
       const col = colHeights.indexOf(Math.min(...colHeights));
       const x = col * (columnWidth + gap);
-      const height = child.height / 2;
+      const height = child.height / 2; // Keep proportional height
       const y = colHeights[col];
 
       colHeights[col] += height + gap;
@@ -213,20 +213,30 @@ const Masonry: React.FC<MasonryProps> = ({
     }
   };
 
+  // Calculate maximum height to prevent container collapse
+  const containerHeight = useMemo(() => {
+    if (!grid.length) return 0;
+    return Math.max(...grid.map(item => item.y + item.h));
+  }, [grid]);
+
   return (
-    <div ref={containerRef} className="relative w-full h-full mt-10 ml-30">
+    <div
+      ref={containerRef}
+      className="relative w-full mt-10 transition-all duration-300"
+      style={{ height: containerHeight > 0 ? `${containerHeight}px` : '100vh' }}
+    >
       {grid.map(item => (
         <div
           key={item.id}
           data-key={item.id}
-          className="absolute box-content"
+          className="absolute box-content cursor-pointer"
           style={{ willChange: 'transform, width, height, opacity' }}
           onClick={() => window.open(item.url, '_blank', 'noopener')}
           onMouseEnter={e => handleMouseEnter(item.id, e.currentTarget)}
           onMouseLeave={e => handleMouseLeave(item.id, e.currentTarget)}
         >
           <div
-            className="relative w-full h-full bg-cover bg-center rounded-[10px] shadow-[0px_10px_50px_-10px_rgba(0,0,0,0.2)] uppercase text-[10px] leading-[10px]"
+            className="relative w-full h-full bg-cover bg-center rounded-[10px] shadow-[0px_10px_50px_-10px_rgba(0,0,0,0.5)] uppercase text-[10px] leading-[10px] overflow-hidden"
             style={{ backgroundImage: `url(${item.img})` }}
           >
             {colorShiftOnHover && (
