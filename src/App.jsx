@@ -40,15 +40,19 @@
 
 import React from "react";
 
+import Navbar from "./Componets/Navbar";
 import Home from "./Pages/Home";
 import Category from "./Pages/Category";
 import About from "./Pages/About";
 import Customers from "./Pages/Customers";
-import Contact from "./Pages/Contact";
+import Footer from "./Componets/Footer";
 
 const App = () => {
   return (
     <div className="min-h-screen flex flex-col bg-black text-white">
+
+      {/* NAVBAR */}
+      <Navbar />
 
       {/* MAIN CONTENT (fills all remaining height before footer) */}
       <main className="flex-grow pb-40">
@@ -61,7 +65,7 @@ const App = () => {
 
       {/* FOOTER */}
       <div className="mt-auto w-full">
-        <Contact />
+        <Footer />
       </div>
 
     </div>
