@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Logo from "../assets/logo.svg";
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -40,7 +39,7 @@ const Footer = () => {
                     {/* COLUMN 1: BRANDING */}
                     <motion.div variants={itemVariants} className="flex flex-col items-center md:items-start text-center md:text-left">
                         <a href="#home" className="inline-block mb-6">
-                            <img src={Logo} alt="Rich Drive Luxury Logo" className="w-48 h-auto" />
+                            <img src="/assets/logo.svg" alt="Rich Drive Luxury Logo" className="w-48 h-auto" />
                         </a>
                         <p className="text-gray-400 text-sm leading-relaxed mb-8 max-w-xs font-open">
                             Premium pre-owned luxury cars delivered with trust and excellence across India.

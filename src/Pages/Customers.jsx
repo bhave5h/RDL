@@ -178,28 +178,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import Masonry from "../Componets/Masonry";
 
-import image1 from "../assets/image 1.png";
-import image2 from "../assets/image 2.png";
-import image3 from "../assets/image 3.png";
-import image4 from "../assets/image 4.png";
-import image5 from "../assets/image 5.png";
-import image6 from "../assets/image 6.png";
-import image7 from "../assets/image 7.png";
-import image8 from "../assets/image 8.png";
-import image9 from "../assets/image 9.png";
-import image10 from "../assets/image 10.png";
 
 const items = [
-  { id: "1", img: image1, height: 500 },
-  { id: "2", img: image2, height: 350 },
-  { id: "3", img: image3, height: 700 },
-  { id: "4", img: image4, height: 300 },
-  { id: "5", img: image5, height: 500 },
-  { id: "6", img: image6, height: 600 },
-  { id: "7", img: image7, height: 500 },
-  { id: "8", img: image8, height: 600 },
-  { id: "9", img: image9, height: 600 },
-  { id: "10", img: image10, height: 400 },
+  { id: "1", img: "/assets/image 1.png", url: "https://www.instagram.com/richdriveluxurycars/", height: 500 },
+  { id: "2", img: "/assets/image 2.png", url: "https://www.instagram.com/richdriveluxurycars/", height: 350 },
+  { id: "3", img: "/assets/image 3.png", url: "https://www.instagram.com/richdriveluxurycars/", height: 700 },
+  { id: "4", img: "/assets/image 4.png", url: "https://www.instagram.com/richdriveluxurycars/", height: 300 },
+  { id: "5", img: "/assets/image 5.png", url: "https://www.instagram.com/richdriveluxurycars/", height: 500 },
+  { id: "6", img: "/assets/image 6.png", url: "https://www.instagram.com/richdriveluxurycars/", height: 600 },
+  { id: "7", img: "/assets/image 7.png", url: "https://www.instagram.com/richdriveluxurycars/", height: 500 },
+  { id: "8", img: "/assets/image 8.png", url: "https://www.instagram.com/richdriveluxurycars/", height: 600 },
+  { id: "9", img: "/assets/image 9.png", url: "https://www.instagram.com/richdriveluxurycars/", height: 600 },
+  { id: "10", img: "/assets/image 10.png", url: "https://www.instagram.com/richdriveluxurycars/", height: 400 },
 ];
 
 const Customers = () => {

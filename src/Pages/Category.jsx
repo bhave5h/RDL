@@ -155,10 +155,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import BMW from "../assets/car1.png";
-import BENZ from "../assets/car2.png";
-import MINI from "../assets/car3.png";
-import AUDI from "../assets/car4.png";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -237,16 +233,16 @@ function Category() {
         {/* CARDS ARRAY FOR STAGGERING */}
         {[
           {
-            img: BENZ, title: "Mercedes Benz", specs: "2.0 E 220 d | E-Class (2023) | 29,000 km", fuel: "Diesel | Automatic", color: "Polar White", price: "₹4,80,000"
+            img: "/assets/car2.png", title: "Mercedes Benz", specs: "2.0 E 220 d | E-Class (2023) | 29,000 km", fuel: "Diesel | Automatic", color: "Polar White", price: "₹4,80,000"
           },
           {
-            img: BMW, title: "BMW 5 Series", specs: "2.0 520D M Sport | 2023 | 17,000 km", fuel: "Diesel | Automatic", color: "Grey", price: "₹55,00,000"
+            img: "/assets/car1.png", title: "BMW 5 Series", specs: "2.0 520D M Sport | 2023 | 17,000 km", fuel: "Diesel | Automatic", color: "Grey", price: "₹55,00,000"
           },
           {
-            img: MINI, title: "MINI Cooper CM", specs: "COOPER S COUNTRYMAN | 50,000 km", fuel: "Petrol | Automatic", color: "Grey", price: "₹3,50,000"
+            img: "/assets/car3.png", title: "MINI Cooper CM", specs: "COOPER S COUNTRYMAN | 50,000 km", fuel: "Petrol | Automatic", color: "Grey", price: "₹3,50,000"
           },
           {
-            img: AUDI, title: "Audi TT", specs: "2.0 45 TFSI | 2017 | 37,000 km", fuel: "Petrol | Automatic", color: "Navy Blue", price: "₹3,70,000"
+            img: "/assets/car4.png", title: "Audi TT", specs: "2.0 45 TFSI | 2017 | 37,000 km", fuel: "Petrol | Automatic", color: "Navy Blue", price: "₹3,70,000"
           }
         ].map((car, i) => (
           <motion.div
