@@ -18,7 +18,12 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="relative min-h-screen w-full overflow-hidden flex items-center justify-center bg-black"
+      className="relative h-[100dvh] w-full overflow-hidden flex items-center justify-center bg-black"
+      onClick={() => {
+        if (videoRef.current) {
+          videoRef.current.play().catch(() => { });
+        }
+      }}
     >
       {/* BACKGROUND VIDEO */}
       <video
@@ -34,7 +39,7 @@ const Home = () => {
       </video>
 
       {/* CONTENT WRAPPER TO KEEP OVER VIDEO */}
-      <div className="relative z-10 w-full h-full min-h-screen">
+      <div className="relative z-10 w-full h-full pointer-events-none">
         {/* LOGO */}
         <motion.img
           initial={{ opacity: 0, y: 30 }}
