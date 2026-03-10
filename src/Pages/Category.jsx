@@ -128,7 +128,7 @@ function Category() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => navigate("/buy-car")}
-          className="bg-gold text-black font-cinzel font-bold text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-gold/50 transition duration-300"
+          className="font-bold cursor-pointer font-cinzel w-fit p-5 bg-zinc-900 border-1 border-zinc-600 hover:bg-zinc-800 py-2 rounded-xl transition-colors duration-300 "
         >
           View All Cars
         </motion.button>
