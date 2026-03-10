@@ -52,7 +52,7 @@ const Navbar = () => {
                                 <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/#about" className="hover:text-gold transition">About</motion.a>
                                 <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/buy-car" className="hover:text-gold transition">Buy Car</motion.a>
                                 <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/sell-car" className="hover:text-gold transition">Sell Car</motion.a>
-                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/#contact" className="hover:text-gold transition">Contact</motion.a>
+                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/contact" className="hover:text-gold transition">Contact</motion.a>
                             </div>
                         </div>
 
@@ -71,7 +71,7 @@ const Navbar = () => {
                                     <a onClick={() => setIsOpen(false)} href="/buy-car" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Buy Car</a>
                                     <a onClick={() => setIsOpen(false)} href="/sell-car" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Sell Car</a>
                                     <a onClick={() => setIsOpen(false)} href="/#customers" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Customers</a>
-                                    <a onClick={() => setIsOpen(false)} href="/#contact" className="hover:text-gold transition w-full pl-2">Contact</a>
+                                    <a onClick={() => setIsOpen(false)} href="/contact" className="hover:text-gold transition w-full pl-2">Contact</a>
                                 </motion.div>
                             )}
                         </AnimatePresence>

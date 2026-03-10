@@ -22,6 +22,10 @@ const itemVariants = {
 };
 
 const Footer = () => {
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <motion.footer
             initial="hidden"
@@ -125,8 +129,18 @@ const Footer = () => {
                 </div>
 
                 {/* BOTTOM DIVIDER & COPYRIGHT */}
-                <motion.div variants={itemVariants} className="border-t border-[#222222] pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-                    <p>© {new Date().getFullYear()} Rich Drive Luxury — All rights reserved.</p>
+                <motion.div variants={itemVariants} className="border-t border-[#222222] pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 relative">
+                    <p className="mb-4 md:mb-0">© {new Date().getFullYear()} Rich Drive Luxury — All rights reserved.</p>
+
+                    {/* BACK TO TOP BUTTON */}
+                    <button
+                        onClick={scrollToTop}
+                        className="md:absolute left-1/2 md:-translate-x-1/2 mb-6 md:mb-0 w-10 h-10 bg-[#1E1E1E] border border-gray-800 rounded-full flex items-center justify-center text-gold hover:bg-gold hover:text-black hover:scale-110 transition-all shadow-lg hover:shadow-gold/20"
+                        aria-label="Scroll to top"
+                    >
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" /></svg>
+                    </button>
+
                     <p className="mt-2 md:mt-0">
                         Website By <a href="https://www.bhaavesssh.me/" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-white transition-colors">Bhavesh</a>
                     </p>
