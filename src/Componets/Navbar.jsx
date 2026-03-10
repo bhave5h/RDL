@@ -49,10 +49,9 @@ const Navbar = () => {
                             {/* Desktop Links */}
                             <div className="hidden md:flex w-full items-center justify-center gap-10 text-white font-cinzel font-semibold text-lg whitespace-nowrap">
                                 <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/#home" className="hover:text-gold transition">Home</motion.a>
-                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/#category" className="hover:text-gold transition">Category</motion.a>
                                 <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/#about" className="hover:text-gold transition">About</motion.a>
                                 <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/buy-car" className="hover:text-gold transition">Buy Car</motion.a>
-                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/#customers" className="hover:text-gold transition">Customers</motion.a>
+                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/sell-car" className="hover:text-gold transition">Sell Car</motion.a>
                                 <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/#contact" className="hover:text-gold transition">Contact</motion.a>
                             </div>
                         </div>
@@ -70,6 +69,7 @@ const Navbar = () => {
                                     <a onClick={() => setIsOpen(false)} href="/#category" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Category</a>
                                     <a onClick={() => setIsOpen(false)} href="/#about" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">About</a>
                                     <a onClick={() => setIsOpen(false)} href="/buy-car" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Buy Car</a>
+                                    <a onClick={() => setIsOpen(false)} href="/sell-car" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Sell Car</a>
                                     <a onClick={() => setIsOpen(false)} href="/#customers" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Customers</a>
                                     <a onClick={() => setIsOpen(false)} href="/#contact" className="hover:text-gold transition w-full pl-2">Contact</a>
                                 </motion.div>

@@ -54,7 +54,6 @@ const BuyCar = () => {
                             animate="visible"
                             exit="exit"
                             variants={cardVariants}
-                            whileHover={{ y: -10 }}
                             className="bg-[#1E1E1E] flex flex-col text-white rounded-xl overflow-hidden w-full max-w-[300px] shadow-lg transition-shadow hover:shadow-2xl hover:shadow-black/50"
                         >
                             <div className="overflow-hidden">
@@ -80,7 +79,7 @@ const BuyCar = () => {
                                 <div className="mt-auto">
                                     <button
                                         onClick={() => navigate(`/car/${car.id}`)}
-                                        className="w-full bg-transparent border border-gold text-gold hover:bg-gold hover:text-black font-cinzel font-semibold py-2 rounded transition-colors duration-300"
+                                        className="font-semibold cursor-pointer w-fit p-5 bg-zinc-900 border-1 border-zinc-600 hover:bg-zinc-800 py-2 rounded-xl transition-colors duration-300"
                                     >
                                         View Details
                                     </button>

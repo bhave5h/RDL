@@ -128,7 +128,7 @@ const Footer = () => {
                 <motion.div variants={itemVariants} className="border-t border-[#222222] pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
                     <p>© {new Date().getFullYear()} Rich Drive Luxury — All rights reserved.</p>
                     <p className="mt-2 md:mt-0">
-                        Website By <a href="https://github.com/bhave5h" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-white transition-colors">Bhavesh</a>
+                        Website By <a href="https://www.bhaavesssh.me/" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-white transition-colors">Bhavesh</a>
                     </p>
                 </motion.div>
 

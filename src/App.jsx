@@ -50,6 +50,7 @@ import Customers from "./Pages/Customers";
 import Footer from "./Componets/Footer";
 import BuyCar from "./Pages/BuyCar";
 import CarDetails from "./Pages/CarDetails";
+import SellCar from "./Pages/SellCar";
 
 const App = () => {
   return (
@@ -73,6 +74,7 @@ const App = () => {
             }
           />
           <Route path="/buy-car" element={<BuyCar />} />
+          <Route path="/sell-car" element={<SellCar />} />
           <Route path="/car/:id" element={<CarDetails />} />
         </Routes>
       </main>
