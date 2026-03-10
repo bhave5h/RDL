@@ -48,11 +48,12 @@ const Navbar = () => {
 
                             {/* Desktop Links */}
                             <div className="hidden md:flex w-full items-center justify-center gap-10 text-white font-cinzel font-semibold text-lg whitespace-nowrap">
-                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="#home" className="hover:text-gold transition">Home</motion.a>
-                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="#category" className="hover:text-gold transition">Category</motion.a>
-                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="#about" className="hover:text-gold transition">About</motion.a>
-                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="#customers" className="hover:text-gold transition">Customers</motion.a>
-                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="#contact" className="hover:text-gold transition">Contact</motion.a>
+                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/#home" className="hover:text-gold transition">Home</motion.a>
+                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/#category" className="hover:text-gold transition">Category</motion.a>
+                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/#about" className="hover:text-gold transition">About</motion.a>
+                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/buy-car" className="hover:text-gold transition">Buy Car</motion.a>
+                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/#customers" className="hover:text-gold transition">Customers</motion.a>
+                                <motion.a whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300 }} href="/#contact" className="hover:text-gold transition">Contact</motion.a>
                             </div>
                         </div>
 
@@ -65,11 +66,12 @@ const Navbar = () => {
                                     exit={{ opacity: 0, height: 0 }}
                                     className="md:hidden flex flex-col items-start gap-5 px-4 pt-4 pb-8 w-full text-white font-cinzel font-semibold text-xl overflow-hidden"
                                 >
-                                    <a onClick={() => setIsOpen(false)} href="#home" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Home</a>
-                                    <a onClick={() => setIsOpen(false)} href="#category" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Category</a>
-                                    <a onClick={() => setIsOpen(false)} href="#about" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">About</a>
-                                    <a onClick={() => setIsOpen(false)} href="#customers" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Customers</a>
-                                    <a onClick={() => setIsOpen(false)} href="#contact" className="hover:text-gold transition w-full pl-2">Contact</a>
+                                    <a onClick={() => setIsOpen(false)} href="/#home" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Home</a>
+                                    <a onClick={() => setIsOpen(false)} href="/#category" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Category</a>
+                                    <a onClick={() => setIsOpen(false)} href="/#about" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">About</a>
+                                    <a onClick={() => setIsOpen(false)} href="/buy-car" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Buy Car</a>
+                                    <a onClick={() => setIsOpen(false)} href="/#customers" className="hover:text-gold transition w-full border-b border-gray-600/30 pb-2 pl-2">Customers</a>
+                                    <a onClick={() => setIsOpen(false)} href="/#contact" className="hover:text-gold transition w-full pl-2">Contact</a>
                                 </motion.div>
                             )}
                         </AnimatePresence>

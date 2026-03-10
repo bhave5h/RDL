@@ -40,12 +40,16 @@
 
 import React from "react";
 
+import { Routes, Route } from "react-router-dom";
+
 import Navbar from "./Componets/Navbar";
 import Home from "./Pages/Home";
 import Category from "./Pages/Category";
 import About from "./Pages/About";
 import Customers from "./Pages/Customers";
 import Footer from "./Componets/Footer";
+import BuyCar from "./Pages/BuyCar";
+import CarDetails from "./Pages/CarDetails";
 
 const App = () => {
   return (
@@ -56,11 +60,21 @@ const App = () => {
 
       {/* MAIN CONTENT (fills all remaining height before footer) */}
       <main className="flex-grow pb-40">
-        {/* pb-40 = space so footer never touches content */}
-        <Home />
-        <Category />
-        <About />
-        <Customers />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <Category />
+                <About />
+                <Customers />
+              </>
+            }
+          />
+          <Route path="/buy-car" element={<BuyCar />} />
+          <Route path="/car/:id" element={<CarDetails />} />
+        </Routes>
       </main>
 
       {/* FOOTER */}
